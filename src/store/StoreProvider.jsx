@@ -10,6 +10,7 @@ const StoreProvider = ({ children }) => {
 
 	const fetchData = async () => {
 		const { data } = await request.get('/courses');
+		console.log(data)
 
 		setCourses(data.courses);
 	};
