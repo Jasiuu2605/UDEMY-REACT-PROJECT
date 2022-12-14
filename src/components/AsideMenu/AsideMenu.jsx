@@ -22,8 +22,6 @@ const AsideMenu = () => {
         <UserMenu isUserLogged={Boolean(user)} />
         {adminMenuComponent}
       </div>
-      <UserMenu isUserLogged={Boolean(user)} />
-      {adminMenuComponent}
     </section>
   );
 };

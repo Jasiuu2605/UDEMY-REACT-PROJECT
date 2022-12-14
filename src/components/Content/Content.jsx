@@ -4,7 +4,7 @@ import { Redirect, Route, Switch } from "react-router-dom";
 
 // import AdminPanel from "../AdminPanel/AdminPanel";
 import Courses from "../Courses/Courses";
-// import UserCourses from "../UserCourses/UserCourses";
+import UserCourses from "../UserCourses/UserCourses";
 import { StoreContext } from "../../store/StoreProvider";
 
 import { default as ContentStyles } from "./Content.module.scss";
@@ -24,7 +24,7 @@ const Content = () => {
       <Switch>
         <Route exact path="/" render={() => <Courses />} />
         {isUserLogged && (
-          <Route exact path="/my-courses" render={() => <p>Moje kursy</p>} />
+          <Route exact path="/my-courses" render={() => <UserCourses />} />
         )}
         {isAdmin && (
           <Route exact path="/manage-courses" render={() => <p>Panel admina</p> } />
