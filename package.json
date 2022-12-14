@@ -6,7 +6,6 @@
   "scripts": {
     "start": "webpack-dev-server --mode=development",
     "build": "webpack-dev-server --mode=production"
-    
   },
   "keywords": [],
   "author": "Jan Banczerowski",
@@ -16,10 +15,11 @@
     "bem-css-modules": "^1.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.5"
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.18.9",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.0",
