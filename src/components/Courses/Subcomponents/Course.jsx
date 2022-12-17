@@ -39,7 +39,11 @@ const Course = ({ authors, img, price, title, id, isUserContext = false }) => {
     <li>
       <article className={style()}>
         <h3 className={style("title")}>{title}</h3>
-        <img className={style("image")} src={img} alt={title} />
+        <img
+          className={style("image")}
+          src="https://cdn.pixabay.com/photo/2017/11/16/09/32/matrix-2953869_960_720.jpg"
+          alt={title}
+        />
         <p className={style("price")}>{`Koszt kursu: ${price}zł`}</p>
         <p className={style("authors")}>{`Autorzy kursu: ${allAuthors}`}</p>
         {shouldBeBuyButtonVisible && (
